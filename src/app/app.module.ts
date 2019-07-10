@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { InMemoryDataService } from './in-memory-data.service';
 import { ProjectSearchComponent } from './components/project-search/project-search.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProjectSearchComponent } from './components/project-search/project-sear
     ProjectDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    ProjectSearchComponent
+    ProjectSearchComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
