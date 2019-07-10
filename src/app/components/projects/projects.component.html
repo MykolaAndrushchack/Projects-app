@@ -1,0 +1,18 @@
+<h2>List of projects</h2>
+
+<div>
+  <label>
+    Project name:
+    <input #projectName />
+  </label>
+  <button (click)="add(projectName.value); projectName.value = ''">Add</button>
+</div>
+
+<ul class="projects">
+  <li *ngFor="let proj of project">
+    <a routerLink="/detail/{{ proj.id }}">
+      <span class="badge">{{ proj.id }}</span> {{ proj.name }}
+    </a>
+    <button class="delete" (click)="delete(proj)">X</button>
+  </li>
+</ul>
